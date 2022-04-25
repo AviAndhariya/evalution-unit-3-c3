@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Amount</title>
+</head>
+<style>
+  #add-money {
+    display: flex;
+    flex-direction: column;
+  }
+  #amount {
+    width: 20%;
+    margin: auto;
+    margin-top: 20px;
+  }
+  #add_to_wallet{
+    width: 10%;
+    margin: auto;
+    margin-top: 20px;
+  }
+  #book_movies {
+    margin: auto;
+    margin-top: 20px;
+    width: 10%;
+  }
+  #wallet {
+    margin-left: 95%;
+  }
+</style>
+
+<body>
+  <div id="navbar">
+    <h1>Add Money to wallet</h1>
+    <h1 id="wallet">0</h1>
+    <!-- Display the wallet amount here inside h1 tag with id as "wallet". Note only amount, no extra text. Like 500 not Rs 500 -->
+  </div>
+  <div id="add-money">
+    <input type="number" id="amount" placeholder="Enter Amount in rupees">
+    <button id="add_to_wallet" onclick="addTowallet()">Add To wallet</button>
+    <button id="book_movies"><a href="movies.html">Book Movies</a></button>
+    <!-- input box for accepting money with id as "amount" -->
+    <!-- button with id as "add_to_wallet" -->
+    <!-- button with id as "book_movies" to go to movies.html -->
+  </div>
+</body>
+
+</html>
+<script src="./scripts/index.js"></script>
